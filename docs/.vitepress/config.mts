@@ -22,7 +22,6 @@ export default defineConfig({
     outline: [2, 6],
     nav: [
       { text: '首页', link: '/' },
-      { text: '配置文档', link: '/docs/入门指引/快速开始', activeMatch: '/docs/' },
       {
         text: 'Vue源码',
         items: [
@@ -32,7 +31,6 @@ export default defineConfig({
         ]
       },
       { text: '面试相关', link: '/docs/面试相关/Vue2相关面试题' },
-      // { text: '短路由模式', link: '/docs-shorturl/ssuhngw0yb3dgkkg', activeMatch: '/docs-shorturl/' }
     ],
     sidebar: {
       "/docs/": await genYuqueSideBar('/docs'),

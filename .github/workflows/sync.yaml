@@ -2,9 +2,9 @@ name: Sync Docs
 
 on:
   # 允许手动push触发
-#  push:
-#    branches:
-#      - master
+  #  push:
+  #    branches:
+  #      - master
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
@@ -37,12 +37,11 @@ jobs:
           YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
         run: |
           npm run elog:sync
-#          npm run elog:sync-short
-
+      #          npm run elog:sync-short
       - name: 配置Git用户名邮箱
         run: |
-          git config --global user.name "1874"
-          git config --global user.email "me@mail.1874.cool"
+          git config --global user.name "xxld0125"
+          git config --global user.email "xxld0125@163.com"
 
       - name: 提交拉取的文档到GitHub仓库
         run: |
