@@ -1,0 +1,580 @@
+{
+  "docs": [
+    {
+      "id": 220558671,
+      "doc_id": "td5foy9h11ss7kao",
+      "updated": 1747808847000,
+      "properties": {
+        "title": "Diff 算法的实现流程",
+        "urlname": "td5foy9h11ss7kao",
+        "date": "2025-05-21 14:26:26",
+        "updated": "2025-05-21 14:27:27",
+        "description": "patch 更新流程graph TD    A[\"调用patch方法\"] --&gt; B{\"是否是首次渲染?\"}    B --&gt;|是| C[\"获取真实DOM元素\"]    C --&gt; D[\"创建新DOM元素\"]    D --&gt; E[\"插入到父节点\"]    E --&gt; F[\"移除旧节点\"]  ..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "td5foy9h11ss7kao"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "td5foy9h11ss7kao"
+        }
+      ],
+      "realName": "Diff 算法的实现流程",
+      "relativePath": "/Vue源码/Vue2/Diff 算法的实现流程.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 140590585,
+      "doc_id": "xun49t5i3l3pd9lu",
+      "updated": 1747809529000,
+      "properties": {
+        "title": "Vue2",
+        "urlname": "xun49t5i3l3pd9lu",
+        "date": "2023-09-21 19:52:38",
+        "updated": "2025-05-21 14:38:49",
+        "description": "本文档详细介绍了 Vue2 源码项目中各个核心模块的功能和实现细节，并提供学习难易度、面试相关度及学习建议。核心模块1. 实例初始化 (src/init.js)难易程度：★★★☆☆ (中等)面试相关度：★★★★☆ (高)学习建议：入门模块，了解 Vue 整体工作流程的基础Vue 构造函数和实例..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "xun49t5i3l3pd9lu"
+        }
+      ],
+      "realName": "Vue2",
+      "relativePath": "/Vue源码/Vue2.md",
+      "docPath": "docs/docs/Vue源码"
+    },
+    {
+      "id": 220562558,
+      "doc_id": "ap1cgw71gxbg7k6a",
+      "updated": 1747809622000,
+      "properties": {
+        "title": "无标题文档",
+        "urlname": "ap1cgw71gxbg7k6a",
+        "date": "2025-05-21 14:40:22",
+        "updated": "2025-05-21 14:40:22"
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "ap1cgw71gxbg7k6a"
+        }
+      ],
+      "realName": "无标题文档",
+      "relativePath": "/Vue源码/无标题文档.md",
+      "docPath": "docs/docs/Vue源码"
+    },
+    {
+      "id": 220558680,
+      "doc_id": "rwu2talofhmpy0g7",
+      "updated": 1747808836000,
+      "properties": {
+        "title": "Computed 的实现流程",
+        "urlname": "rwu2talofhmpy0g7",
+        "date": "2025-05-21 14:26:32",
+        "updated": "2025-05-21 14:27:16",
+        "description": "初始化流程graph TD    A[Vue实例化] --&gt; B[initState]    B --&gt; C{是否有computed选项}    C --&gt;|是| D[initComputed]    C --&gt;|否| Z[结束]    D --&gt; E[创建_computedWatchers空..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "rwu2talofhmpy0g7"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "rwu2talofhmpy0g7"
+        }
+      ],
+      "realName": "Computed 的实现流程",
+      "relativePath": "/Vue源码/Vue2/Computed 的实现流程.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 220558698,
+      "doc_id": "akrpn90i39xctbgz",
+      "updated": 1747809378000,
+      "properties": {
+        "title": "组件渲染实现原理",
+        "urlname": "akrpn90i39xctbgz",
+        "date": "2025-05-21 14:26:36",
+        "updated": "2025-05-21 14:36:18",
+        "description": "本文档通过流程图展示 Vue2 组件渲染的核心实现原理，包括组件的创建、挂载和更新过程。组件渲染整体流程graph TD    A[Vue实例化] --&gt;|_init| B[初始化]    B --&gt; C[执行beforeCreate钩子]    B --&gt; D[初始化状态]    B --&gt;..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "akrpn90i39xctbgz"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "akrpn90i39xctbgz"
+        }
+      ],
+      "realName": "组件渲染实现原理",
+      "relativePath": "/Vue源码/Vue2/组件渲染实现原理.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 220557923,
+      "doc_id": "fwai1agnlx6yszv7",
+      "updated": 1747808807000,
+      "properties": {
+        "title": "响应式系统实现原理",
+        "urlname": "fwai1agnlx6yszv7",
+        "date": "2025-05-21 14:24:46",
+        "updated": "2025-05-21 14:26:47",
+        "cover": "https://cdn.nlark.com/yuque/__mermaid_v3/20a793d5588fe9727932a1900bcab207.svg",
+        "description": "本文档通过流程图展示 Vue2 响应式系统的核心实现原理，包括双重依赖收集设计和异步更新队列机制。响应式系统整体架构双重依赖收集设计原理在 Vue2 响应式系统中存在两种依赖收集器，这种双重依赖设计是 Vue2 响应式系统的核心，解决了 JavaScript 本身对象变化检测的局限性。grap..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "fwai1agnlx6yszv7"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "fwai1agnlx6yszv7"
+        }
+      ],
+      "realName": "响应式系统实现原理",
+      "relativePath": "/Vue源码/Vue2/响应式系统实现原理.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 220557306,
+      "doc_id": "gomuhzd4mx9xumkx",
+      "updated": 1747808642000,
+      "properties": {
+        "title": "keep-alive 组件缓存与重新渲染流程",
+        "urlname": "gomuhzd4mx9xumkx",
+        "date": "2025-05-21 14:23:14",
+        "updated": "2025-05-21 14:24:02",
+        "cover": "https://cdn.nlark.com/yuque/__latex/048fba10fe25de9997bbf040a64d6a32.svg",
+        "description": "本文档详细说明了 Vue 2.6.14 中 keep-alive 组件的缓存机制以及被缓存组件重新渲染的完整流程。1. 缓存机制keep-alive 组件的基本工作原理如下：初始化阶段created () {   this.cache = Object.create(null)   this...."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "gomuhzd4mx9xumkx"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "gomuhzd4mx9xumkx"
+        }
+      ],
+      "realName": "keep-alive 组件缓存与重新渲染流程",
+      "relativePath": "/Vue源码/Vue2/keep-alive 组件缓存与重新渲染流程.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 220556350,
+      "doc_id": "zn4h005s2042m101",
+      "updated": 1747808455000,
+      "properties": {
+        "title": "Vue2相关面试题",
+        "urlname": "zn4h005s2042m101",
+        "date": "2025-05-21 14:20:03",
+        "updated": "2025-05-21 14:20:55",
+        "description": "1. Vue响应式数据的理解Vue2 的响应式系统可以监控数据的修改和获取操作。针对对象格式，会给每个对象的属性进行劫持，使用 Object.defineProperty 实现。从源码层面分析，实现流程为：initData -&gt; observe -&gt; defineReactive。内部对所有属..."
+      },
+      "catalog": [
+        {
+          "title": "面试相关",
+          "doc_id": "zn4h005s2042m101"
+        }
+      ],
+      "realName": "Vue2相关面试题",
+      "relativePath": "/面试相关/Vue2相关面试题.md",
+      "docPath": "docs/docs/面试相关"
+    },
+    {
+      "id": 140804763,
+      "doc_id": "agw89dgkqgutn67g",
+      "updated": 1747019110000,
+      "properties": {
+        "title": "3.实现对象的响应式原理",
+        "urlname": "agw89dgkqgutn67g",
+        "date": "2023-09-24 20:58:50",
+        "updated": "2025-05-12 11:05:10",
+        "cover": "https://cdn.nlark.com/yuque/__mermaid_v3/60ff0ecc6ba55584b3fca3be4c37bae9.svg",
+        "description": "一、数据劫持observe: 给传入的数据对象的每个属性都增加一个响应式的定义function initData(vm) {   let data = vm.$options.data;   data = vm._data = typeof data === 'function' ? data..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "agw89dgkqgutn67g"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "agw89dgkqgutn67g"
+        }
+      ],
+      "realName": "3.实现对象的响应式原理",
+      "relativePath": "/Vue源码/Vue2/3.实现对象的响应式原理.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 214074834,
+      "doc_id": "yzgiu95h6swtcoe7",
+      "updated": 1743935194000,
+      "properties": {
+        "title": "Vue3",
+        "urlname": "yzgiu95h6swtcoe7",
+        "date": "2025-04-06 18:26:31",
+        "updated": "2025-04-06 18:26:34"
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "yzgiu95h6swtcoe7"
+        }
+      ],
+      "realName": "Vue3",
+      "relativePath": "/Vue源码/Vue3.md",
+      "docPath": "docs/docs/Vue源码"
+    },
+    {
+      "id": 140804792,
+      "doc_id": "ce6vlkcgvy9hzk8g",
+      "updated": 1703509377000,
+      "properties": {
+        "title": "4.实现数组的响应式原理",
+        "urlname": "ce6vlkcgvy9hzk8g",
+        "date": "2023-09-24 20:59:06",
+        "updated": "2023-12-25 21:02:57",
+        "description": "一、在Observer类中，判断要监控的数据是否为数组如果是数组，将数组的原型指向 arrayMethods对数组中的每一项进行观测// Observer 类，用来监控数据变化 class Observer {   constructor(data) {      // 给 data 对象定义..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "ce6vlkcgvy9hzk8g"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "ce6vlkcgvy9hzk8g"
+        }
+      ],
+      "realName": "4.实现数组的响应式原理",
+      "relativePath": "/Vue源码/Vue2/4.实现数组的响应式原理.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 140592825,
+      "doc_id": "msq65h2lgyto3eae",
+      "updated": 1695565689000,
+      "properties": {
+        "title": "2.初始化数据",
+        "urlname": "msq65h2lgyto3eae",
+        "date": "2023-09-21 20:25:49",
+        "updated": "2023-09-24 22:28:09",
+        "description": "import { initMixin } from \"./init\";  function Vue(options) {   // 在 Vue 的构造函数中调用 _init 方法   this._init(options); }  // 为 Vue 的原型上添加一个 _init 方法 init..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "msq65h2lgyto3eae"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "msq65h2lgyto3eae"
+        }
+      ],
+      "realName": "2.初始化数据",
+      "relativePath": "/Vue源码/Vue2/2.初始化数据.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 140804824,
+      "doc_id": "bm13a17kpuyywuz1",
+      "updated": 1695560378000,
+      "properties": {
+        "title": "5.解析模板参数",
+        "urlname": "bm13a17kpuyywuz1",
+        "date": "2023-09-24 20:59:25",
+        "updated": "2023-09-24 20:59:38"
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "bm13a17kpuyywuz1"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "bm13a17kpuyywuz1"
+        }
+      ],
+      "realName": "5.解析模板参数",
+      "relativePath": "/Vue源码/Vue2/5.解析模板参数.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    },
+    {
+      "id": 140590769,
+      "doc_id": "hdf71diwzishurmg",
+      "updated": 1747809598000,
+      "properties": {
+        "title": "搭建开发环境",
+        "urlname": "hdf71diwzishurmg",
+        "date": "2023-09-21 19:55:07",
+        "updated": "2025-05-21 14:39:58",
+        "description": "一、下载依赖npm install rollup rollup-plugin-babel @babel/core @babel/preset-env --save-devrolluprollup-pluguin-babel@babel/core@babel/preset-env二、rollup..."
+      },
+      "catalog": [
+        {
+          "title": "Vue源码",
+          "doc_id": "hdf71diwzishurmg"
+        },
+        {
+          "title": "Vue2",
+          "doc_id": "hdf71diwzishurmg"
+        }
+      ],
+      "realName": "搭建开发环境",
+      "relativePath": "/Vue源码/Vue2/搭建开发环境.md",
+      "docPath": "docs/docs/Vue源码/Vue2"
+    }
+  ],
+  "catalog": [
+    {
+      "type": "TITLE",
+      "title": "面试相关",
+      "uuid": "KvV6ce0NlduiYCfl",
+      "url": "",
+      "prev_uuid": "",
+      "sibling_uuid": "5e6yMmd4LKFLLcJu",
+      "child_uuid": "qy1uCCA3wGIdEw6f",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Vue2相关面试题",
+      "uuid": "qy1uCCA3wGIdEw6f",
+      "url": "zn4h005s2042m101",
+      "prev_uuid": "KvV6ce0NlduiYCfl",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "KvV6ce0NlduiYCfl",
+      "doc_id": 220556350,
+      "level": 1,
+      "id": 220556350,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "TITLE",
+      "title": "Vue源码",
+      "uuid": "5e6yMmd4LKFLLcJu",
+      "url": "",
+      "prev_uuid": "KvV6ce0NlduiYCfl",
+      "sibling_uuid": "",
+      "child_uuid": "Z_Az6wqAEwNZayG5",
+      "parent_uuid": "",
+      "doc_id": "",
+      "level": 0,
+      "id": "",
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Vue2",
+      "uuid": "Z_Az6wqAEwNZayG5",
+      "url": "xun49t5i3l3pd9lu",
+      "prev_uuid": "5e6yMmd4LKFLLcJu",
+      "sibling_uuid": "vW_i0AzV9KdxXHzV",
+      "child_uuid": "Y6iTi8jnG98XSlpY",
+      "parent_uuid": "5e6yMmd4LKFLLcJu",
+      "doc_id": 140590585,
+      "level": 1,
+      "id": 140590585,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "搭建开发环境",
+      "uuid": "Y6iTi8jnG98XSlpY",
+      "url": "hdf71diwzishurmg",
+      "prev_uuid": "Z_Az6wqAEwNZayG5",
+      "sibling_uuid": "R8xWDdJsGxq4TbDQ",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 140590769,
+      "level": 2,
+      "id": 140590769,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "组件渲染实现原理",
+      "uuid": "R8xWDdJsGxq4TbDQ",
+      "url": "akrpn90i39xctbgz",
+      "prev_uuid": "Y6iTi8jnG98XSlpY",
+      "sibling_uuid": "WPGdmtt7C5sHiAOP",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 220558698,
+      "level": 2,
+      "id": 220558698,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Computed 的实现流程",
+      "uuid": "WPGdmtt7C5sHiAOP",
+      "url": "rwu2talofhmpy0g7",
+      "prev_uuid": "R8xWDdJsGxq4TbDQ",
+      "sibling_uuid": "nW-ZTxFQCL0QXNLL",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 220558680,
+      "level": 2,
+      "id": 220558680,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Diff 算法的实现流程",
+      "uuid": "nW-ZTxFQCL0QXNLL",
+      "url": "td5foy9h11ss7kao",
+      "prev_uuid": "WPGdmtt7C5sHiAOP",
+      "sibling_uuid": "6bNp4Hbbn0mQLbum",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 220558671,
+      "level": 2,
+      "id": 220558671,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "响应式系统实现原理",
+      "uuid": "6bNp4Hbbn0mQLbum",
+      "url": "fwai1agnlx6yszv7",
+      "prev_uuid": "nW-ZTxFQCL0QXNLL",
+      "sibling_uuid": "-DYQ8w_l6q0GAwA5",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 220557923,
+      "level": 2,
+      "id": 220557923,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "keep-alive 组件缓存与重新渲染流程",
+      "uuid": "-DYQ8w_l6q0GAwA5",
+      "url": "gomuhzd4mx9xumkx",
+      "prev_uuid": "6bNp4Hbbn0mQLbum",
+      "sibling_uuid": "kTtO3aEXtHFsbpXs",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 220557306,
+      "level": 2,
+      "id": 220557306,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "2.初始化数据",
+      "uuid": "kTtO3aEXtHFsbpXs",
+      "url": "msq65h2lgyto3eae",
+      "prev_uuid": "-DYQ8w_l6q0GAwA5",
+      "sibling_uuid": "G--cNwO0Z7Ppjcfr",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 140592825,
+      "level": 2,
+      "id": 140592825,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "3.实现对象的响应式原理",
+      "uuid": "G--cNwO0Z7Ppjcfr",
+      "url": "agw89dgkqgutn67g",
+      "prev_uuid": "kTtO3aEXtHFsbpXs",
+      "sibling_uuid": "bPV7dz3XBRakrkXh",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 140804763,
+      "level": 2,
+      "id": 140804763,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "4.实现数组的响应式原理",
+      "uuid": "bPV7dz3XBRakrkXh",
+      "url": "ce6vlkcgvy9hzk8g",
+      "prev_uuid": "G--cNwO0Z7Ppjcfr",
+      "sibling_uuid": "8XuUsdVewenEwkOl",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 140804792,
+      "level": 2,
+      "id": 140804792,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "5.解析模板参数",
+      "uuid": "8XuUsdVewenEwkOl",
+      "url": "bm13a17kpuyywuz1",
+      "prev_uuid": "bPV7dz3XBRakrkXh",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "Z_Az6wqAEwNZayG5",
+      "doc_id": 140804824,
+      "level": 2,
+      "id": 140804824,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
+      "title": "Vue3",
+      "uuid": "vW_i0AzV9KdxXHzV",
+      "url": "yzgiu95h6swtcoe7",
+      "prev_uuid": "Z_Az6wqAEwNZayG5",
+      "sibling_uuid": "qhA3HPtIo2NkLLJE",
+      "child_uuid": "",
+      "parent_uuid": "5e6yMmd4LKFLLcJu",
+      "doc_id": 214074834,
+      "level": 1,
+      "id": 214074834,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
+      "title": "无标题文档",
+      "uuid": "qhA3HPtIo2NkLLJE",
+      "url": "ap1cgw71gxbg7k6a",
+      "prev_uuid": "vW_i0AzV9KdxXHzV",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "5e6yMmd4LKFLLcJu",
+      "doc_id": 220562558,
+      "level": 1,
+      "id": 220562558,
+      "open_window": 1,
+      "visible": 0
+    }
+  ]
+}
